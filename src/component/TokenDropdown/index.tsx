@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const tokens = [
   { symbol: "DOGE", name: "ms DOGE", logo: "src/assets/Group 734.svg" },

@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Slider = ({value, handleChange} : {value : any; handleChange : any, setValue : any}) => {
   return (
