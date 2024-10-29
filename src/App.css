@@ -1,0 +1,371 @@
+:body {
+    --time-delay-1: 1s;
+}
+
+.specialtext
+{
+    text-shadow: 
+    3px 3px 0px #212833, 
+    3px 3px 0px #212833, 
+    3px 0px 0px #212833, 
+    2px -3px 0px #212833, 
+    -1px -3px 0px #212833, 
+    3px -3px 0px #212833, 
+    -3px -3px 0px #212833, 
+    0px -3px 0px #212833, 
+    -3px 3px 0px #212833,
+    0px 3.1px 0px #212833
+}
+
+.specialtext1
+{
+    text-shadow: 
+    3px 3px 0px #fff, 
+    3px 3px 0px #fff, 
+    3px 0px 0px #fff, 
+    2px -3px 0px #fff, 
+    -1px -3px 0px #fff, 
+    3px -3px 0px #fff, 
+    -3px -3px 0px #fff, 
+    0px -3px 0px #fff, 
+    -3px 3px 0px #fff,
+    0px 3.0px 0px #fff; 
+}
+
+.visibility-flag{
+    /* transform: rotateZ(12deg); */
+    animation: visible 1s ease-in-out;
+    /* animation-delay: 2s */
+}
+
+@keyframes visible{
+    from{
+        transform: rotateZ(12deg);
+        /* opacity: 0; */
+    } 
+    to{
+        transform: rotateZ(0deg);
+        /* opacity: 1; */
+    }
+} 
+
+.box-animation{
+    /* margin-top: 8rem;
+    margin-left: 32rem; */
+    transform: rotateZ(10deg);
+    animation: box-animation 1s ease-in-out
+}
+
+@keyframes box-animation{
+    from{
+        position: absolute;
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotateZ(0);
+    }
+    to{
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotateZ(10deg);
+    }
+}
+
+.word-animation1{
+    transform: rotateZ(-5deg);
+    animation: wordanimation1 1s ease-in-out;
+}
+
+.word-animation2{
+    transform: rotateZ(5deg);
+    animation: wordanimation2 1s ease-in-out;
+}
+
+@keyframes wordanimation1 {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-5deg);
+    }
+}
+
+@keyframes wordanimation2 {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(5deg);
+    }
+}
+
+/* icon animation part 1 */
+
+.animation-div1{
+    position: relative;
+    transform: rotateX('-30');
+}
+
+.animation-div1 img:nth-child(1){
+    animation: example1 2s ease-in-out;
+    transform: translate(0, -3rem) scale(1);
+}
+
+.animation-div1 img:nth-child(2){
+    position: absolute;
+    top: 10px;
+    right:14px;
+    animation: example4 2s ease-in-out;
+    transform: translate(0, -3rem) scale(1);
+}
+
+@keyframes example1 {
+    from {
+        transform: translate(0px, 0px) scale(1);
+    }
+    to {
+        transform: translate(0, -3rem) scale(1);
+    }
+}
+@keyframes example4 {
+    from {
+        transform: translate(0px, 0px) scale(1);
+    }
+    to {
+        transform: translate(0, -3rem) scale(1);
+    }
+}
+  
+
+.animation-div2{
+    position: relative;
+    transform: rotate('30');
+}
+
+
+.animation-div2 img:nth-child(1){
+    animation: example2 2s ease-in-out; 
+    transform: translate(0, -3rem) scale(1);
+    
+}
+
+.animation-div2 img:nth-child(2){
+    position: absolute;
+    top: 10px;
+    left:12px;
+    animation: example3 2s ease-in-out; 
+    transform: translate(0, -3rem) scale(1);
+}
+
+@keyframes example2 {
+    from {
+        transform: translate(0px, 0px) scale(1);
+    }
+    to {
+        transform: translate(0, -3rem) scale(1);
+    }
+}
+
+@keyframes example3 {
+    from {
+        transform: translate(0px, 0px) scale(1);
+    }
+    to {
+        transform: translate(0, -3rem) scale(1);
+    }
+}
+
+/* icon animation part 2 */
+
+.animation1-div1 img:nth-child(1){
+    animation: example5 2s ease-in-out;
+    transform: translate(-1rem, -3rem) scale(1.6);
+}
+
+.animation1-div1 img:nth-child(2){
+    position: absolute;
+    top: 10px;
+    right:14px;
+    animation: example6 2s ease-in-out;
+    transform: translate(-1rem, -3rem) scale(1.6);
+}
+
+@keyframes example5 {
+    from {
+        transform: translate(0, -3rem) scale(1);
+    }
+    to {
+        transform: translate(-1rem, -3rem) scale(1.6);
+    }
+}
+
+@keyframes example6 {
+    from {
+        transform: translate(0, -3rem) scale(1);
+    }
+    to {
+        transform: translate(-1rem, -3rem) scale(1.6);
+    }
+}
+
+.animation1-div2 img:nth-child(1){
+    animation: example7 2s ease-in-out; 
+    transform: translate(1rem, -3rem) scale(1.6);
+    
+}
+
+.animation1-div2 img:nth-child(2){
+    position: absolute;
+    top: 10px;
+    left:12px;
+    animation: example8 2s ease-in-out; 
+    transform: translate(1rem, -3rem) scale(1.6);
+}
+
+@keyframes example7 {
+    from {
+        transform: translate(0, -3rem) scale(1);
+    }
+    to {
+        transform: translate(1rem, -3rem) scale(1.6);
+    }
+}
+
+@keyframes example8 {
+    from {
+        transform: translate(0, -3rem) scale(1);
+    }
+    to {
+        transform: translate(1rem, -3rem) scale(1.6);
+    }
+}
+
+/* icon animation part 3 */
+
+    .animation2-div1 img:nth-child(1){
+        animation: example9 2s ease-in-out;
+        transform: translate(-7rem, -5rem) scale(1.6);
+    }
+
+    .animation2-div1 img:nth-child(2){
+        position: absolute;
+        top: 10px;
+        right:14px;
+        animation: example10 2s ease-in-out;
+        transform: translate(-7rem, -5rem) scale(1.6);
+    }
+
+    @keyframes example9 {
+        from {
+            transform: translate(-1rem, -3rem) scale(1.6);
+        }
+        to {
+            transform: translate(-7rem, -5rem) scale(1.6);
+        }
+    }
+
+    @keyframes example10 {
+        from {
+            transform: translate(-1rem, -3rem) scale(1.6);
+        }
+        to {
+            transform: translate(-7rem, -5rem) scale(1.6);
+        }
+    }
+
+    .animation2-div2 img:nth-child(1){
+        animation: example11 2s ease-in-out; 
+        transform: translate(7rem, -5rem) scale(1.6);
+        
+    }
+
+    .animation2-div2 img:nth-child(2){
+        position: absolute;
+        top: 10px;
+        left:12px;
+        animation: example12 2s ease-in-out; 
+        transform: translate(7rem, -5rem) scale(1.6);
+    }
+
+    @keyframes example11 {
+        from {
+            transform: translate(1rem, -3rem) scale(1.6);
+        }
+        to {
+            transform: translate(7rem, -5rem) scale(1.6);
+        }
+    }
+
+    @keyframes example12 {
+        from {
+            transform: translate(1rem, -3rem) scale(1.6);
+        }
+        to {
+            transform: translate(7rem, -5rem) scale(1.6);
+        }
+    }
+
+/* icon animation part 4 */
+
+.animation3-div1 img:nth-child(1){
+    animation: example13 2s ease-in-out;
+    transform: translate(-20rem, -13rem) scale(1.6);
+}
+
+.animation3-div1 img:nth-child(2){
+    position: absolute;
+    top: 10px;
+    right:14px;
+    animation: example14 2s ease-in-out;
+    transform: translate(-16rem, -7rem) scale(1.6);
+}
+
+@keyframes example13 {
+    from {
+        transform: translate(-7rem, -5rem) scale(1.6);
+    }
+    to {
+        transform: translate(-20rem, -13rem) scale(1.6);
+    }
+}
+
+@keyframes example14 {
+    from {
+        transform: translate(-7rem, -5rem) scale(1.6);
+    }
+    to {
+        transform: translate(-16rem, -7rem) scale(1.6);
+    }
+}
+
+.animation3-div2 img:nth-child(1){
+    animation: example15 2s ease-in-out; 
+    transform: translate(20rem, -13rem) scale(1.6);
+    
+}
+
+.animation3-div2 img:nth-child(2){
+    position: absolute;
+    top: 10px;
+    left:12px;
+    animation: example16 2s ease-in-out; 
+    transform: translate(16rem, -7rem) scale(1.6);
+}
+
+@keyframes example15 {
+    from {
+        transform: translate(7rem, -5rem) scale(1.6);
+    }
+    to {
+        transform: translate(20rem, -13rem) scale(1.6);
+    }
+}
+
+@keyframes example16 {
+    from {
+        transform: translate(7rem, -5rem) scale(1.6);
+    }
+    to {
+        transform: translate(16rem, -7rem) scale(1.6);
+    }
+}
+

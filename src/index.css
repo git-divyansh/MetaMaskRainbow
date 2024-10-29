@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Dx Dynamix';
+    src: url('src/assets/fonts/DxDynamix-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('src/assets/fonts/NeueMontreal-Regular.otf') format('truetype'); /* Update the path if necessary */
+    font-weight: 300; /* Specify the weight for medium */
+    font-style: normal; /* Specify the style of the font */
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('src/assets/fonts/ClashDisplay-Bold.otf') format('truetype'); /* Update the path if necessary */
+    font-weight: 300; /* Specify the weight for medium */
+    font-style: normal; /* Specify the style of the font */
+}
+
+@font-face {
+    font-family: 'Awesome Serif';
+    src: url('src/assets/fonts/AwesomeSerif-MediumExtraTall.otf') format('truetype'); /* Update the path if necessary */
+    font-weight: 700; /* Specify the weight for medium */
+    font-style: normal; /* Specify the style of the font */
+}
+
+
